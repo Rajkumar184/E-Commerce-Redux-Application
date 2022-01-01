@@ -1,0 +1,9 @@
+.contact-content {
+	background-color: #dfe4ea;
+}
+
+@media (max-width: 576px) {
+	.img-fluids {
+		display: none;
+	}
+}
