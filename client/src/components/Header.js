@@ -92,7 +92,7 @@ const Header = () => {
 							<li className="nav-item ">
 								<a
 									className="nav-link text-danger"
-									href="http://localhost:5000/auth/logout"
+									href="https://shopify-mern-app.herokuapp.com/auth/logout"
 								>
 									<span className="fas fa-sign-in-alt "></span> Logout
 								</a>
@@ -101,7 +101,7 @@ const Header = () => {
 							<li className="nav-item">
 								<a
 									className="nav-link text-dark"
-									href="http://localhost:5000/auth/google"
+									href="https://shopify-mern-app.herokuapp.com/auth/google"
 								>
 									<span className="fas fa-sign-in-alt "></span> Login
 								</a>

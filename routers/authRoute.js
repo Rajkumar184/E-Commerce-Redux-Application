@@ -12,11 +12,11 @@ router.get(
 router.get(
 	"/auth/callback",
 	passport.authenticate("google", {
-		failureRedirect: "http://localhost:3000/auth/google",
+		failureRedirect: "https://shopify-mern-app.herokuapp.com/auth/google",
 	}),
 	(req, res) => {
 		try {
-			res.redirect("http://localhost:3000/");
+			res.redirect("https://shopify-mern-app.herokuapp.com/");
 			res.send(req.user);
 		} catch (error) {
 			console.log(error);
@@ -31,7 +31,7 @@ router.get("/auth/profile", isUserLogin, (req, res) => {
 router.get("/auth/logout", (req, res) => {
 	req.session = null;
 	req.logout();
-	res.redirect("http://localhost:3000/");
+	res.redirect("https://shopify-mern-app.herokuapp.com/");
 });
 
 module.exports = router;
