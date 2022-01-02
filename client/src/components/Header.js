@@ -63,7 +63,12 @@ const Header = () => {
 							</Link>
 						</li> */}
 						<li className="nav-item">
-							<h4 className="nav-link text-dark">Welcome, {user?.name}</h4>
+							<h4 className="nav-link text-dark">Welcome</h4>
+						</li>
+						<li className="nav-item">
+							{/* <img src={user?.photo} alt="" style={{ borderRadius: "60%" }} /> */}
+							{/* <p>{user?.name}</p> */}
+							<h4 className="nav-link text-danger"> {user?.name}</h4>
 						</li>
 					</ul>
 

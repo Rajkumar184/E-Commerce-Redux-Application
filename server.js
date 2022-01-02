@@ -37,16 +37,16 @@ const contact = require("./routers/contact");
 app.use("/", contact);
 
 // ----------------- production --------------------------
-// const path = require("path");
+const path = require("path");
 
-// __dirname = path.resolve();
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static(path.join(__dirname, "/client/build")));
+__dirname = path.resolve();
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "/client/build")));
 
-//   app.get("*", (req, res) => {
-//     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-//   });
-// }
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
 // ----------------- production --------------------------
 
 app.listen(process.env.PORT, () => {

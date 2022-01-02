@@ -169,17 +169,19 @@ const Cart = () => {
 								</button>
 							</div>
 						) : (
-							<button
-								className="btn btn-primary mb-4 btn-lg pl-3 pr-3 py-0"
-								onClick={() =>
-									toast.error("Login to make payment!", {
-										position: toast.POSITION.TOP_CENTER,
-										autoClose: 3000,
-									})
-								}
-							>
-								Checkout
-							</button>
+							<div className="p-2">
+								<button
+									className="btn btn-primary mb-4 btn-lg pl-5 pr-5"
+									onClick={() =>
+										toast.error("Login to make payment!", {
+											position: toast.POSITION.TOP_CENTER,
+											autoClose: 3000,
+										})
+									}
+								>
+									Checkout
+								</button>
+							</div>
 						)}
 					</div>
 
